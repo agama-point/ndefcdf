@@ -5,8 +5,8 @@ from io import BytesIO
 
 class CDFBaseRecord(GlobalRecord):
     def __init__(self, value=None):
-        self.label = value.split(":")[0] if ":" in value else None
-        self.url = value.split(":")[1] if ":" in value else value
+        self.label = value.split(":")[0] if ":http" in value else None
+        self.url = ':'.join(value.split(":")[1:]) if ":http" in value else value
 
 
     def __str__(self):
