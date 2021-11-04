@@ -5,7 +5,7 @@ from .baserecord import CDFBaseRecord
 
 
 class CDFLNPay(CDFBaseRecord):
-    _type = "cdf/lnpay"
+    _type = "cdf/lnp"
 
     def __str__(self):
         """Return an informal representation suitable for printing."""
