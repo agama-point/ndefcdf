@@ -25,6 +25,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name=NAME,
     version=find_meta("version"),
+    license=find_meta("license"),
     author="Petr Kracik",
     author_email="petrkr@petrkr.net",
     description="NDEF Crypto Data Format",
