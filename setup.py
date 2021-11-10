@@ -39,5 +39,31 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Development Status :: 1 - Planning",
     ],
+    install_requires=[
+        'ndeflib',
+    ],
+    python_requires='>=3.4'
+)
+
+setuptools.setup(
+    name="micropython-"+NAME,
+    version=find_meta("version"),
+    license=find_meta("license"),
+    author="Petr Kracik",
+    author_email="petrkr@petrkr.net",
+    description="NDEF Crypto Data Format",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/agama-point/"+NAME,
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent",
+        "Development Status :: 1 - Planning",
+    ],
+    install_requires=[
+        'micropython-ndeflib',
+    ],
     python_requires='>=3.4'
 )
