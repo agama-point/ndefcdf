@@ -1,6 +1,6 @@
 # Copyright (c) 2021 Petr Kracik
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __license__ = "Apache Software License"
 __copyright__ = "Copyright (c) 2021 Petr Kracik"
 
